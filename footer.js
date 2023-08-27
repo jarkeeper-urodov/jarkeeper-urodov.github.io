@@ -1,1 +1,1 @@
-document.write('</div><footer><hr><strong>rejoice!</strong> &middot; <a href="/">home</a> &middot; <a href="/ej/">empty jar</a> &middot; <a href="/about/">about</a> &middot; <a href="/contact/">contact</a></footer>');
+document.write('<footer><hr><strong>rejoice!</strong> &middot; <a href="/">home</a> &middot; <a href="/ej/">empty jar</a> &middot; <a href="/about/">about</a> &middot; <a href="/contact/">contact</a></footer>');

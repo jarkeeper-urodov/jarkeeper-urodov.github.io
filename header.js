@@ -1,1 +1,1 @@
-document.write('<h1><a href="/">WEBSITE URODOV</a></h1><div class="of-auto">');
+document.write('<h1><a href="/">WEBSITE URODOV</a></h1>');
