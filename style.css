@@ -12,7 +12,7 @@ body {
 }
 
 img {
-  max-width: 668px;
+    width: 100%;
 }
 
 p {
@@ -61,4 +61,15 @@ p img {
   height: 40px;
   width: 40px;
   background-color: black;
+}
+
+.carousel {
+    display: flex;
+}
+
+iframe {
+    width: 100%;
+    height: 80ex;
+    border: none;
+    border-top: solid 1px;
 }
