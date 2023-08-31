@@ -7,17 +7,25 @@ const images = [
     'sky'
 ];
 
-const id = Math.floor(Number((new URL(window.document.location).searchParams).get('id')) % images.length);
+const id = Math.floor(Number((new URL(document.location).searchParams).get('id')) % images.length);
 
-const image = window.document.querySelector('img');
+const image = document.querySelector('img');
 
-const prev = window.document.getElementById('prev');
+const prev = document.getElementById('prev');
 
-const next = window.document.getElementById('next');
+const next = document.getElementById('next');
 
-const prev_id = (id - 1 + images.length) % images.length
+const prev_id = (id - 1 + images.length) % images.length;
 
-const next_id = (id + 1) % images.length
+const next_id = (id + 1) % images.length;
+
+if (id == 4) {
+    console.log('fish time');
+    const fish = document.createElement('a');
+    document.querySelector('.carousel').replaceChild(fish, image);
+    fish.append(image);
+    fish.setAttribute('href', 'https://en.wikipedia.org/wiki/Sailfish');
+}
 
 image.setAttribute('src', `carousel-images/${images[id]}.gif`);
 image.setAttribute('alt', images[id]);
